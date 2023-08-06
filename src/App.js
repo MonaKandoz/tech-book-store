@@ -1,49 +1,40 @@
+import CategoriesSection from "./components/categories-section/categories-section.component";
+
 const App = () => {
+  const categories = [
+    {
+      id: 1,
+      title: 'JavaScript',
+      imgURL: "",
+    },
+    {
+      id: 2,
+      title: 'PHP',
+      imgURL: "",
+    },
+    {
+      id: 3,
+      title: 'CSS',
+      imgURL: "",
+    },
+    {
+      id: 4,
+      title: "React.JS",
+      imgURL: "",
+    },
+    {
+      id: 5,
+      title: "Python",
+      imgURL: "",
+    },
+    {
+      id: 6,
+      title: "GraphQL",
+      imgURL: "",
+    },
+  ];
   return (
-    <div className="categories-container">
-      <div className="category-container">
-        <span
-          className="category-image"
-          style={{ backgroundImage: `url()` }}
-        ></span>
-        <span className="category-title">JavaScript</span>
-      </div>
-      <div className="category-container">
-        <span
-          className="category-image"
-          style={{ backgroundImage: `url()` }}
-        ></span>
-        <span className="category-title">PHP</span>
-      </div>
-      <div className="category-container">
-        <span
-          className="category-image"
-          style={{ backgroundImage: `url()` }}
-        ></span>
-        <span className="category-title">CSS</span>
-      </div>
-      <div className="category-container">
-        <span
-          className="category-image"
-          style={{ backgroundImage: `url()` }}
-        ></span>
-        <span className="category-title">React.JS</span>
-      </div>
-      <div className="category-container">
-        <span
-          className="category-image"
-          style={{ backgroundImage: `url()` }}
-        ></span>
-        <span className="category-title">Paython</span>
-      </div>
-      <div className="category-container">
-        <span
-          className="category-image"
-          style={{ backgroundImage: `url()` }}
-        ></span>
-        <span className="category-title">GraphQL</span>
-      </div>
-    </div>
+    <CategoriesSection categories={categories} />
   );
 };
 
