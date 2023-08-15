@@ -1,3 +1,4 @@
+import './category-item.style.scss'
 const CategoryItem = ({category})=>{
     const {title, imgURL} =category;
     return (
