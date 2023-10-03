@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-body {
-  margin: 0 100px;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Jockey One', sans-serif;
+}
+
+body{
+  background: #FFFFCF;
+}
+
+a{
+  text-decoration: none;
+  color: #292929;
+}
+
+.page-content{
+  margin: 0 100px;
 }
